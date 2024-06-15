@@ -1,0 +1,19 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    /* filter: blur(20px); */
+}
+.logo{
+    height: 100px;
+    width: 176px;
+}
+button{
+    padding: 10px 20px;
+}
