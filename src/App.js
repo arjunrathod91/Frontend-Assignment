@@ -19,6 +19,17 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import BoltIcon from "@mui/icons-material/Bolt";
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import GppGoodIcon from "@mui/icons-material/GppGood";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import BookIcon from '@mui/icons-material/Book';
+import WebAssetIcon from '@mui/icons-material/WebAsset';
+import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
+import AdsClickIcon from '@mui/icons-material/AdsClick';
+import AssistantIcon from '@mui/icons-material/Assistant';
+import TheatersIcon from '@mui/icons-material/Theaters';
 
 import { useState } from "react";
 
@@ -33,37 +44,37 @@ function App() {
       desc: "Drive Your Success with Automotive SEO: Ignite Online Visibility and Outrace the Competition. Accelerate Your Business Growth Today",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <AdsClickIcon />,
       title: "PPC Precision",
       desc: "Maximize visibility and drive quality traffic with meticulously targeted Pay-Per-Click campaigns.",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <AssistantIcon />,
       title: "Social Acceleration",
       desc: "Engage and influence your audience across social media platforms, amplifying your brand's presence and connection",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <BookIcon />,
       title: "Content Excellence",
       desc: "Craft compelling, automotive-specific content that resonates with enthusiasts and drives engagement.",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <WebAssetIcon />,
       title: "Web Design",
       desc: "Transform visitors into customers with high-performance websites designed for seamless user experiences and increased conversions.",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <DataThresholdingIcon />,
       title: "Data-Driven Insights",
       desc: "Leverage data to refine your strategies, making informed decisions that drive revenue growth.",
     },
     {
-      icon: <EqualizerIcon />,
+      icon: <PsychologyIcon />,
       title: "End-to-End Solutions",
       desc: "From initial awareness to post-purchase loyalty, we offer full-funnel solutions that guide customers through every step of their journey.",
     },
     {
-      icon: "",
+      icon: <TheatersIcon/>,
       title: "Video marketing",
       desc: "Unleash the Power of Video Marketing: Captivate, Engage, and Elevate Your Brand with Compelling Visual Stories.",
     },
@@ -96,7 +107,7 @@ function App() {
       <Navbar />
       <section className="hero d-flex flex-col">
         <div className="d-flex flex-col div-1">
-          <h1 style={{ fontSize: "48px" }}>
+          <h1>
             Elevate <span>Real Estate Success</span> with
             <br /> Osumare's Digital Expertise
           </h1>
@@ -110,7 +121,6 @@ function App() {
         </div>
         <div className="overlay"></div>
       </section>
-
       <section className="sec-2 d-flex flex-col">
         <div className="sec2-header">
           <h2>Real Estate-Focused Digital Mastery</h2>
@@ -189,7 +199,7 @@ function App() {
         </div>
       </section>
       <section className="sec-5 d-flex flex-col">
-        <span>Driving Property Inquiries to Conversions</span>
+        <h2 style={{textAlign:'center'}}>Driving Property Inquiries to Conversions</h2>
         <div className="sec5-div-1 d-flex">
           <div className="sec5-box d-flex flex-col">
             <div className="sec5-icon">
@@ -242,7 +252,7 @@ function App() {
         </div>
       </section>
       <section className="sec-5 d-flex flex-col">
-        <span>Driving Property Inquiries to Conversions</span>
+        <h2 style={{textAlign:'center'}}>Driving Property Inquiries to Conversions</h2>
         <div className="sec5-div-1 d-flex">
           <div className="sec5-box d-flex flex-col">
             <div className="sec5-icon">
@@ -292,7 +302,7 @@ function App() {
         </div>
       </section>
       <section className="sec-6 d-flex flex-col">
-        <span>Your Peace of Mind</span>
+        <h2>Your Peace of Mind</h2>
         <p>
           Through our conversion-focused strategies, we ensure that property
           seekers are not just visitors, but engaged prospects ready to make
@@ -303,21 +313,21 @@ function App() {
         <div className="theme-right"></div>
       </section>
       <section className="sec-7 d-flex flex-col">
-        <span>What Our Pharma Partners Say</span>
+        <h2>What Our Pharma Partners Say</h2>
         <p>Driving Transformations, One Brand at a Time</p>
         <div className="testimonial-box d-flex">
           <div className="sec7-div-1">
             <img src="Img/testimonial.png" />
-            {/* <div className="play-btn"></div> */}
+            <div className="play-btn d-flex" style={{justifyContent:'center',alignItems:'center',color:'white'}}><p ><PlayCircleIcon sx={{fontSize:'45px'}}/></p></div>
           </div>
           <div className="sec7-div-2 d-flex flex-col">
             <div className="d-flex" style={{ gap: "30px" }}>
               <img
                 src="Img/testimonial.png"
-                style={{ height: "40px", width: "40px", borderRadius: "50%" }}
+                style={{ height: "40px", width: "40px", borderRadius: "50%",objectFit:'cover',objectPosition:'top' }}
                 alt=""
               />
-              <span>Tabish khan</span>
+              <p style={{fontWeight:'500',fontSize:'15px'}}>Tabish khan</p>
             </div>
             <p>
               Osumare's expertise in pharma marketing is unparalleled. Their
@@ -374,7 +384,7 @@ function App() {
               color: `${faq1 ? "white" : ""}`,
             }}
           >
-            <span>1. How does Osumare measure campaign success?</span>
+            <p>1. How does Osumare measure campaign success?</p>
             {faq1 ? (
               <ExpandLessIcon className="mr" />
             ) : (
@@ -401,7 +411,7 @@ function App() {
               color: `${faq2 ? "white" : ""}`,
             }}
           >
-            <span>2. How does Osumare measure campaign success? </span>
+            <p>2. How does Osumare measure campaign success? </p>
             {faq2 ? (
               <ExpandLessIcon className="mr" />
             ) : (
@@ -428,7 +438,7 @@ function App() {
               color: `${faq3 ? "white" : ""}`,
             }}
           >
-            <span>3. How does Osumare measure campaign success?</span>
+            <p>3. How does Osumare measure campaign success?</p>
             {faq3 ? (
               <ExpandLessIcon className="mr" />
             ) : (
@@ -437,7 +447,9 @@ function App() {
           </div>
           <div
             className="open-section d-flex"
-            style={{ display: `${faq3 ? "flex" : "none"}` }}
+            style={{ display: `${faq3 ? "flex" : "none"}`,
+            borderBottom: `${faq3 ? "1px solid black" : "none"}`
+          }}
           >
             <p>
               We believe in measurable results. Our data-driven approach means
@@ -453,13 +465,13 @@ function App() {
         className="sec-9 d-flex flex-col"
         style={{ position: "relative" }}
       >
-        <span>Connect with Our Digital Marketing Experts</span>
-        <p>
+        <h2 style={{textAlign:'center',padding:'0 10px'}}>Connect with Our Digital Marketing Experts</h2>
+        <p style={{textAlign:'center',padding:'0 10px'}}>
           Reach Out for Tailored Strategies and Results-Driven Solutions. Let's
           Elevate Your Online Presence Together
         </p>
         <div className="contact-form d-flex flex-col">
-          <div className="d-flex" style={{ gap: "20px", padding: "10px 20px" }}>
+          <div className="form-div d-flex" style={{ gap: "20px", padding: "10px 20px" }}>
             <div className="form-div-1 d-flex flex-col flex-1">
               <div className="form-inp d-flex flex-col">
                 <span>Name</span>
@@ -498,6 +510,82 @@ function App() {
         <div className="theme-left"></div>
         <div className="theme-right"></div>
       </section>
+      <section className="sec-10 d-flex flex-col">
+        <div className="footer-box d-flex" style={{ padding: "30px" }}>
+          <div className="sec10-div-1 d-flex flex-col flex-1">
+            <div className="d-flex flex-col">
+              <img
+                src="Img/ass-logo.png"
+                alt="logo"
+                style={{ height: "100px", width: "150px" }}
+              />
+              <p style={{maxWidth:'350px'}}>
+                The best digital marketing agency in Pune with a proven track
+                record of consistently delivering quality service.
+              </p>
+            </div>
+            <div className="d-flex flex-col">
+              <span>Address</span>
+              <p style={{maxWidth:'400px'}}>Survey No. 43, Pathare Thube Nagar, Nagar Road, Kharadi, Pune-14, Maharastra, India.</p>
+            </div>
+            <div className="d-flex flex-col">
+              <span>Contact</span>
+              <div className="d-flex flex-col" style={{marginTop:'10px',fontSize:'14px'}}>
+              <div className="d-flex" style={{gap:'10px',justifyContent:'start',alignItems:'center'}}>
+                  <EmailIcon sx={{fontSize:'20px'}} />
+                  <p style={{margin:'0'}}>hello@osumare.in</p>
+                </div>
+                <div className="d-flex" style={{gap:'10px',justifyContent:'start',alignItems:'center'}}>
+                  <CallIcon sx={{fontSize:'20px'}}/>
+                  <p style={{margin:'0'}}>+91 8459 8762 26</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sec10-div-2 d-flex flex-1"
+            style={{ justifyContent: "space-around" }}
+          >
+            <div>
+              <span>Menu</span>
+              <p>Home</p>
+              <p>About</p>
+              <p>Services</p>
+              <p>Blog</p>
+              <p>Work</p>
+              <p>Career</p>
+            </div>
+            <div>
+              <span>Social</span>
+              <div className="d-flex" style={{ flexWrap: "wrap", gap: "20px" }}>
+                <div className="icon">
+                  <XIcon />
+                </div>
+                <div className="icon">
+                  <FacebookIcon />
+                </div>
+                <div className="icon">
+                  <YouTubeIcon />
+                </div>
+                <div className="icon">
+                  <PinterestIcon />
+                </div>
+                <div className="icon">
+                  <InstagramIcon />
+                </div>
+                <div className="icon">
+                  <WhatsAppIcon />
+                </div>
+                <div className="icon">
+                  <RedditIcon />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style={{marginTop:'20px'}}>© 2023 Osumare. All rights reserved.</p>
+      </section>     
+{/*
       <section className="sec-10 d-flex flex-col">
         <div className="footer-box d-flex" style={{ padding: "30px" }}>
           <div className="sec10-div-1 d-flex flex-col flex-1">
@@ -572,8 +660,8 @@ function App() {
           </div>
         </div>
         <p>© 2023 Osumare. All rights reserved.</p>
-      </section>
-    </div>
+      </section>*/}
+    </div> 
   );
 }
 

@@ -46,7 +46,7 @@ input{
 
 /*Hero*/
 .hero{
-  height: 800px;
+  padding:20px 0;
   width: 100%;
   background: url('../public/Img/ass-img.png');
   background-repeat: no-repeat;
@@ -66,6 +66,7 @@ input{
 .div-1 h1{
   margin: 0;
   font-weight: 500;
+  font-size: 48px;
 }
 .div-1 span{
   color: #0078FF;
@@ -81,7 +82,8 @@ input{
 }
 .home-png{
   height: 538px;
-  width: 796px;
+  width: 80%;
+  mix-blend-mode: multiply;
   
 }
 .overlay{
@@ -102,53 +104,45 @@ input{
 /*sec-2*/
 
 .sec-2{
-  height: 500px;
+  padding:20px 0;
   width: 100%;
   background-color: white;
   justify-content: start;
-  margin-top: 100px;
-}
-.sec2-header h2{
-  font-size: 32px;
-  text-align: center;
-}
-.sec2-header p{
+  align-items: center;
+  margin-top: 50px;
   text-align: center;
 }
 .sec2-div{
-  gap: 20px;
+
+}
+.sec2-header{
+  text-align: center;
 }
 
 .sec2-div-1{
   flex: 1;
 }
+
 .sec2-div-1 img{
-  height: 350px;
-  width: 500px;
+  height: 300px;
+  width: 100%;
 }
 .sec2-div-2{
   gap:40px;
   flex: 1;
   padding: 20px;
+  text-align: start;
 }
-.sec2-div-2 h2{
-  font-size: 32px;
 
-}
-.sec2-div-2 p{
-
-
-} 
 .sec2-div-2 button{
   margin-top: 20px;
   width: 180px;
-  
 } 
 
 /*Sec-3*/
 
 .sec-3{
-  height: 800px;
+  padding: 20px 0;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -212,13 +206,13 @@ input{
 
 /*Sec-4*/
 .sec-4{
-  height: 600px;
+  padding: 20px 0;
   justify-content: start;
+  align-items: center;
   text-align: center;
 }
 .sec4-div{
-  margin: 0 150px;
-
+  gap: 20px;
 }
 .sec4-div-1{
   flex: 1;
@@ -234,7 +228,6 @@ input{
   align-items: center;
   border-radius: 10px;
   gap: 20px;
-  
 }
 .box .box-div p,span,.icon{
   margin: 0;
@@ -256,21 +249,24 @@ input{
   width: 350px;
 }
 .sec-5{
-  height: 800px;
+  padding: 20px 0;
   width: 100%;
   justify-content: start;
   align-items: center;
 }
 .sec-5 .sec5-div-1{
-  gap: 50px;
+  gap: 30px;
+  justify-content: center;
+  align-items:center ;
+  flex-wrap: wrap;
 }
 .sec-5 .sec5-div-1 .sec5-box{
   height: 300px;
-  width: 500px;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex:1;
 }
 .sec5-icon{
   height: 110px;
@@ -284,9 +280,9 @@ input{
 
 /*sec6*/
 .sec-6{
-  height: 500px;
+  padding: 20px 0;
   width: 100%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   position: relative;
@@ -328,15 +324,16 @@ input{
 .sec-7{
   justify-content: center;
   align-items: center;
-  height: 700px;
+  padding: 20px 0;
   width: 100%;
 }
 .testimonial-box{
   height: 300px;
-  width: 600px;
-  box-shadow: 0 0 30px 30px rgba(21, 108, 207, 0.24);
+  width: 700px;
+  box-shadow: 0 0 10px 0.8px rgb(75, 75, 75);
   padding: 20px;
   border-radius: 5px;
+  margin-top: 50px;
   gap: 20px;
 }
 .sec7-div-1{
@@ -345,17 +342,21 @@ input{
 }
 .play-btn{
   position: absolute;
-  top: 50%;
-  left:50%;
+  top: 45%;
+  left:45%;
   height: 50px;
   width: 50px;
-  background-color: gray;
   border-radius: 50%;
+}
+.sec7-div-1{
+  flex: 1;
 }
 .sec7-div-1 img{
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
 }
 .sec7-div-2{
   flex: 1;
@@ -367,15 +368,18 @@ input{
 .sec-8{
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px 0;
 }
 .faq-box{
   width: 500px;
   /* box-shadow: 0 0 30px 30px rgba(21, 108, 207, 0.24); */
   border: 1px solid black;
+  margin-top: 30px;
 }
 .faq-box .item{
   height: 40px;
-  width: 500px;
+  width: 100%;
   border-bottom: 1px solid black;
   justify-content:space-between;
   align-items: center;
@@ -385,16 +389,18 @@ input{
 .faq-box .open-section{
   height: 120px;
   width: 100%;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   justify-content:start;
   align-items: start;
+  text-align: start;
 }
 .open-section p{
   font-size: 12px;
   padding: 10px;
 }
-.item span{
+.item p{
   margin-left: 30px;
+  font-weight: 500;
 }
 .mr{
   margin-right: 20px;
@@ -403,7 +409,7 @@ input{
 
 /*sec-9*/
 .sec-9{
-  height: 600px;
+  padding: 20px 0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -452,7 +458,7 @@ input{
 
 /*Sec-10*/
 .sec-10{
-  height: 500px;
+  padding: 20px 0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -464,11 +470,17 @@ input{
   background: linear-gradient(50deg,#cde4ff,#3f99ff7d);
   border-radius: 10px;
   z-index: 2;
+  gap: 20px;
+}
+.sec10-div-2 .icon{
+  height: 35px;
+  width: 35px;
 }
 .sec10-div-1{
 
 }
 .sec10-div-2{
+  gap: 20px;
 
 }
 
@@ -479,8 +491,49 @@ p{
   font-size: 14px;
 }
 
+
+/* @media only screen and (max-width:1000px) {
+
+} */
+
+@media only screen and (max-width:800px) {
+  .sec2-header{
+    text-align: center;
+  }
+  .sec2-div{
+    flex-direction: column;
+  }
+  .sec-2 img{
+    width: 90%;
+    height: 270px;
+  }
+  .sec2-div-2{
+    text-align: center;
+    padding: 0 20px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .sec4-div{
+   flex-direction: column-reverse;
+  }
+  .sec5-div-1{
+    padding: 0 20px;
+  }
+  .sec-6 p{
+    padding:0 10px;
+  }
+  .testimonial-box{
+    width: 450px;
+    height: 200px;
+  }
+  .contact-form{
+    width: 90%;
+  }
+}
+
 /*Media Quory*/
-@media only screen and (max-width:450px){
+@media only screen and (max-width:500px){
   .App{
     margin: 0;
   }
@@ -492,6 +545,10 @@ p{
   }
   .div-1 h1{
     font-size: 30px;
+    padding: 0 10px;
+  }
+  .div-1 p{
+    padding: 0 20px;
   }
   .div-1 button{
     margin-top: 10px;
@@ -503,10 +560,7 @@ p{
   }
 
   /*sec-2*/
-  .sec-2{
-    height: 1000px;
-  }
-  .sec2-header{
+  /* .sec2-header{
     text-align: center;
   }
   .sec2-div{
@@ -519,12 +573,9 @@ p{
   .sec2-div-2{
     text-align: start;
     width: 350px;
-  }
+  } */
   /*Sec - 3*/
   .sec-3{
-    height: 1000px;
-    padding: 20px 0;
-    padding-bottom:90px;
   }
   .sec-3 .card-cont{
     gap: 18px;
@@ -544,7 +595,6 @@ p{
   }
   .sec-3 .card p{
     font-size: 8px;
-    
   }
   .sec-4{
     margin-top: 50px;
@@ -564,6 +614,43 @@ p{
   .sec-4 .sec4-div{
     flex-direction: column-reverse;
   }  
+
+  .sec5-div-1{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .testimonial-box{
+    flex-direction: column;
+    height: 500px;
+    width: 80%;
+  }
+  .sec7-div-1{
+    height: 300px;
+  }
+  .sec7-div-1 img{
+    height: 100%;
+  }
+  .faq-box{
+    width: 90%;
+  }
+  .faq-box .item p{
+    /* width: 100%; */
+    margin-left: 15px;
+    font-size: 10px;
+  }
+  .contact-form{
+    width: 95%;
+    height: 500px;
+  }
+  .contact-form .form-div{
+    flex-direction: column;
+  }
+  .footer-box{
+    gap: 10px;
+  }
+  .sec10-div-2{
+    flex-direction: column;
+  }
   
 }
 
