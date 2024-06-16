@@ -3,10 +3,10 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar d-flex">
-      <img className="logo" src="Img/ass-logo.png" alt="logo" style={{padding:'0 20px'}} />
-      <button className="sec-btn" style={{margin:'0 20px'}}>Contact Us</button>
-    </div>
+    <nav className="navbar d-flex">
+      <img className="logo" src="Img/ass-logo.png" alt="logo" style={{padding:'0 0 0 40px'}} />
+      <button className="sec-btn" style={{margin:'0 40px 0 0',fontWeight:'600'}}>Contact Us</button>
+    </nav>
   );
 }
 

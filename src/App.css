@@ -10,13 +10,18 @@ button{
   border: none;
   outline: none;
 }
+input,textarea{
+  border-radius: 4px;
+}
 input{
   border: 1px solid gray;
-  outline: none;
   height: 30px;
   background-color: white;padding-left: 10px;
 }
-
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
 .pri-btn{
   background-color: #0078FF;
   border-radius: 32px;
@@ -26,6 +31,9 @@ input{
   font-weight: 500;
   font-size: 15px;
   font-family: 'Montserrat';
+}
+.pri-btn:hover{
+  background-color: #0868d7;
 }
 .sec-btn{
   background-color: white;
@@ -132,6 +140,9 @@ input{
   flex: 1;
   padding: 20px;
   text-align: start;
+}
+.sec2-div-2 p{
+  max-width: 600px;
 }
 
 .sec2-div-2 button{
@@ -266,6 +277,7 @@ input{
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 500px;
   flex:1;
 }
 .sec5-icon{
@@ -280,7 +292,7 @@ input{
 
 /*sec6*/
 .sec-6{
-  padding: 20px 0;
+  padding: 90px 0;
   width: 100%;
   justify-content: start;
   align-items: center;
@@ -336,6 +348,10 @@ input{
   margin-top: 50px;
   gap: 20px;
 }
+
+.testimonial-box .active {
+  display: block;
+}
 .sec7-div-1{
   flex: 1;
   position: relative;
@@ -369,18 +385,16 @@ input{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 0;
+  padding: 160px 0;
 }
 .faq-box{
-  width: 500px;
-  /* box-shadow: 0 0 30px 30px rgba(21, 108, 207, 0.24); */
-  border: 1px solid black;
+  width: 600px;
+  box-shadow: 10px 10px 30px 30px rgba(167, 167, 167, 0.24);
   margin-top: 30px;
 }
 .faq-box .item{
   height: 40px;
   width: 100%;
-  border-bottom: 1px solid black;
   justify-content:space-between;
   align-items: center;
   display: flex;
@@ -389,7 +403,6 @@ input{
 .faq-box .open-section{
   height: 120px;
   width: 100%;
-  border-bottom: 1px solid black;
   justify-content:start;
   align-items: start;
   text-align: start;
@@ -404,12 +417,11 @@ input{
 }
 .mr{
   margin-right: 20px;
-
 }
 
 /*sec-9*/
 .sec-9{
-  padding: 20px 0;
+  padding: 140px 0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -467,7 +479,7 @@ input{
 .footer-box{
   height: 80%;
   width: 80%;
-  background: linear-gradient(50deg,#cde4ff,#3f99ff7d);
+  background: linear-gradient(50deg,#cde4ff,#8bc1ffb7);
   border-radius: 10px;
   z-index: 2;
   gap: 20px;
@@ -476,14 +488,9 @@ input{
   height: 35px;
   width: 35px;
 }
-.sec10-div-1{
-
-}
 .sec10-div-2{
   gap: 20px;
-
 }
-
 span{
   font-weight: 650;
 }
@@ -491,10 +498,7 @@ p{
   font-size: 14px;
 }
 
-
-/* @media only screen and (max-width:1000px) {
-
-} */
+/*Media Quory*/
 
 @media only screen and (max-width:800px) {
   .sec2-header{
@@ -507,11 +511,12 @@ p{
     width: 90%;
     height: 270px;
   }
+  .sec2-div-2 p{
+    max-width: 100%;
+  }
   .sec2-div-2{
     text-align: center;
     padding: 0 20px;
-    /* justify-content: center;
-    align-items: center; */
   }
 
   .sec4-div{
@@ -527,12 +532,14 @@ p{
     width: 450px;
     height: 200px;
   }
+  .faq-box{
+    width: 95%;
+  }
   .contact-form{
     width: 90%;
   }
 }
 
-/*Media Quory*/
 @media only screen and (max-width:500px){
   .App{
     margin: 0;
@@ -559,22 +566,6 @@ p{
    width: 350px;
   }
 
-  /*sec-2*/
-  /* .sec2-header{
-    text-align: center;
-  }
-  .sec2-div{
-    flex-direction: column;
-  }
-  .sec-2 img{
-    width: 350px;
-    height: 270px;
-  }
-  .sec2-div-2{
-    text-align: start;
-    width: 350px;
-  } */
-  /*Sec - 3*/
   .sec-3{
   }
   .sec-3 .card-cont{
@@ -598,7 +589,6 @@ p{
   }
   .sec-4{
     margin-top: 50px;
-    padding-bottom: 350px;
   }
   .sec4-div{
     margin: 0;
@@ -614,10 +604,10 @@ p{
   .sec-4 .sec4-div{
     flex-direction: column-reverse;
   }  
-
   .sec5-div-1{
     flex-direction: column;
     padding: 0 20px;
+    margin-top: 20px;
   }
   .testimonial-box{
     flex-direction: column;
@@ -631,12 +621,14 @@ p{
     height: 100%;
   }
   .faq-box{
-    width: 90%;
+    width: 95%;
   }
   .faq-box .item p{
-    /* width: 100%; */
-    margin-left: 15px;
-    font-size: 10px;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+  }
+  .mr{
+    margin: 0 10px 0 0;
   }
   .contact-form{
     width: 95%;
